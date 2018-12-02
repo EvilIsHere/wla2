@@ -325,22 +325,10 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
 
-client.on('message', message => {
-    if (message.content === '2general_commands') {
-        let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر عامة...**')
-        .addField('avatar', "افاتار الشخص المطلوب")
-        .addField('gif', 'البحث عن جيف انت تطلبه')
-        .addField('ping', 'معرفة ping البوت')
-        .setFooter('المزيد قريبا ان شاء الله!')
-      message.channel.send(helpEmbed);
-    }
-});
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -349,7 +337,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`2play | Official Shop`,"http://twitch.tv/Death Shop")
+client.user.setGame(`2play | Anime kingDom`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
